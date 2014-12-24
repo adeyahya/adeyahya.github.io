@@ -1,0 +1,10 @@
+@font-face {
+    font-family: comfortaa;
+    src: url(../fonts/Comfortaa-Regular.ttf);
+}
+body{
+	font-family: comfortaa,"Segoe UI";
+}
+.img-header{
+	max-width: 90%;
+}
