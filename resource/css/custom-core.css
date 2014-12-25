@@ -2,9 +2,118 @@
     font-family: comfortaa;
     src: url(../fonts/Comfortaa-Regular.ttf);
 }
+*{
+	transition:all 1s;
+}
 body{
 	font-family: comfortaa,"Segoe UI";
 }
-.img-header{
-	max-width: 90%;
+h1{
+	font-size:35px;
+	margin-bottom:20px;
+}
+img{
+	transition:all 1s;
+}
+
+img:hover{
+	animation:getar 0.2s infinite;
+	-webkit-animation:getar 0.2s infinite;
+	-moz-animation:getar 0.2s infinite;
+	-o-animation:getar 0.2s infinite;
+	-moz-animation:getar 0.2s infinite;
+}
+img{
+	max-width: 100%;
+}
+header {
+	padding-top: 40px;
+	padding-bottom: 30px;
+	background-color: #eee !important;
+}
+.navbar-default{
+	padding: 10px 0;
+	background-color: #eee !important;
+	border-color: #eee !important;
+}
+a.navbar-brand {
+	font-size: 30px;
+	padding: 10px 15px;
+}
+@keyframes getar{
+	0% {transform:rotate(5deg);}
+	50% {transform:rotate(-5deg);}
+	100% {transform:rotate(5deg);}
+}
+@-webkit-keyframes getar{
+	0% {-webkit-transform:rotate(5deg);}
+	50% {-webkit-transform:rotate(-5deg);}
+	100% {-webkit-transform:rotate(5deg);}
+}
+@-moz-keyframes getar{
+	0% {-moz-transform:rotate(5deg);}
+	50% {-moz-transform:rotate(-5deg);}
+	100% {-moz-transform:rotate(5deg);}
+}
+@-o-keyframes getar{
+	0% {-o-transform:rotate(5deg);}
+	50% {-o-transform:rotate(-5deg);}
+	100% {-o-transform:rotate(5deg);}
+}
+@-ms-keyframes getar{
+	0% {-ms-transform:rotate(5deg);}
+	50% {-ms-transform:rotate(-5deg);}
+	100% {-ms-transform:rotate(5deg);}
+}
+
+
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+@media screen and (max-width: 992px){
+	.foto-kepala{
+		text-align: center;
+	}
+	.img-header{
+		max-width: 30%;
+		border-radius: 50%;
+		box-shadow: 0px 0px 18px 3px rgb(103, 103, 105);
+	}
+}
+
+section{
+	padding: 15px 0px;
+}
+section.video {
+	background: rgb(195, 48, 48);
+	color: white;
+}
+video{
+	max-width: 100% !important;
+}
+section.animation {
+	background-color: #eee !important;
+}
+footer{
+	background: rgb(19, 19, 19);
+	padding:20px;
 }

@@ -4,11 +4,6 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 	<meta charset="UTF-8">
 	<title>Ade Yahya</title>
-	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-	<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="resource/css/custom-core.css">
-	<script src="bower_components/jquery/dist/jquery.min.js"></script>
-	<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 </head>
 <body>
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -48,17 +43,17 @@
 
 <header style="margin-top:50px;">
 	<div class="container">
+	<hello-world></hello-world>
 		<div class="row">
-			<div class="col-sm-4">
-				<img class="img-header visible-sm visible-lg visible-md" src="resource/images/ade.jpg" alt="ade yahya prasetyo">
+			<div class="col-sm-12 col-md-4 foto-kepala">
+				<img class="img-header" src="resource/images/ade.jpg" alt="ade yahya prasetyo">
 			</div>
-			<div class="col-sm-6">
-				<div class="page-header">
-					<h1>Ade Yahya Prasetyo</h1>
-				</div>
+			<div class="col-sm-12 col-md-8">
 				<article>
+					<h1 class="typing">Ade </h1>
 					<p>Teknologi adalah hal yang sangat menakjubkan, saya selalu kagum dan menyukai teknologi dan oleh karena itu saya mengambil studi Computer Science atau Teknik Informatika.</p>
 					<p>Saat ini saya sedang fokus mempelajari Font-End Development seperti HTML5 dan HTML6, CSS 3 & CSS4, Sass, Git, Bower, AngularJs, PolymerJs, EmberJs, Jquery, JavaScript dan beberapa Back-End seperti NodeJs dan MongoDB.</p>
+					<p>Oh iya, saya juga bisa membantu anda membuat website, jika butuh hubungi ya ;)</p>
 				</article>
 				<a href="http://github.com/adeyahya" class="btn btn-default btn-lg"><i class="fa fa-github-alt"></i> Github</a> <a href="http://twitter.com/monyetbegok" class="btn btn-info btn-lg"><i class="fa fa-twitter"></i> Twitter</a>
 			</div>
@@ -66,25 +61,53 @@
 	</div>
 </header>
 
-<style>
-	img{
-		max-width: 100%;
-	}
-	header {
-		padding-top: 40px;
-		padding-bottom: 30px;
-		background-color: #eee !important;
-	}
-	.navbar-default{
-		padding: 10px 0;
-		background-color: #eee !important;
-		border-color: #eee !important;
-	}
-	a.navbar-brand {
-		font-size: 30px;
-		padding: 10px 15px;
-	}
-</style>
+<section class="video">
+	<div class="container">
+		<div class="col-sm-6">
+			<h2>Apa itu Responsive Website ?</h2>
+			<article>
+				<p>Pada tahun - tahun sebelumnya perangat keras untuk mengakses internet tidak begitu beragam, mungkin hanya terdiri dari laptop dan desktop pc. Namun pada tahun belakangan ini mulai trand smartphone, smart-tv, netbook, dan ponsel biasa yang bisa mengakses internet. Karena perangkat - perangkat tersebut memiliki ukuran layar yang berbeda maka diciptakanlah Teknik Responsive Desain untuk website yang memungkinkan website dapat menyesuaikan layout dengan ukuran layar perangkat pengakses. Coba lihat video berikut ini.</p>
+			</article>
+		</div>
+
+		<div class="col-sm-6">
+			<iframe width="100%" height="315" src="//www.youtube.com/embed/S48-8wfFxPY" frameborder="0" allowfullscreen></iframe>
+		</div>
+	</div>
+</section>
+
+<section class="animation">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6">
+				<br>
+				<button class="barel-rol btn btn-info btn-lg">Do a Barrel Roll</button>
+				<br>
+				<button class="flip btn btn-warning btn-lg">Do a Flipping Animation</button>
+			</div>
+			<div class="col-sm-6">
+				<article class="flipping">
+					<h2>Butuh Animasi ?</h2>
+					<p>Teknologi HTML5 dan CSS3 bisa membuat website kita menjadi semakin interaktif, salah satunya adalah responsive yang telah dibahas diatas. Kemudian dengan bantuan JavaScript atau Jquery website kita menjadi semakin interaktif lagi dimana kita dapat mengatur animasi pada sebuah event. Contoh klik salah satu tombol berwarna tersebut.</p>
+				</article>
+			</div>
+		</div>
+	</div>
+</section>
+
+<footer>
+	<div class="container">
+		<p style="color:white;">&copy; adeyahya.github.com 2014</p>
+	</div>
+</footer>
 
 </body>
 </html>
+
+<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="resource/css/custom-core.css">
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="bower_components/typed.js/js/typed.js"></script>
+<script src="resource/js/core.js"></script>
