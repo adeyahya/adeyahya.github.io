@@ -24,4 +24,24 @@ $(document).ready(function(){
     	$(".flipping").css("-o-transform","rotateY(360deg)");
     	$(".flipping").css("-ms-transform","rotateY(360deg)");
     });
+
+    $(window).scroll(function(){
+        var top = $("body").scrollTop();
+        if(top > 10){
+            console.log($(".navbar-default").css("border-color"));
+            $(".navbar-default").css("border-color","#827A77");
+        }else{
+            $(".navbar-default").css("border-color","#eee");
+        }
+
+        if(top > 100){
+            $(".keAtas").css("opacity","1");
+        }else{
+            $(".keAtas").css("opacity","0");
+        }
+    });
+
+    $(".keAtas").click(function(){
+        $("body").animate({scrollTop:0},800);
+    });
 });

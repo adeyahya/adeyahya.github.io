@@ -34,7 +34,7 @@ header {
 .navbar-default{
 	padding: 10px 0;
 	background-color: #eee !important;
-	border-color: #eee !important;
+	border-color: #eee;
 }
 a.navbar-brand {
 	font-size: 30px;
@@ -116,4 +116,13 @@ section.animation {
 footer{
 	background: rgb(19, 19, 19);
 	padding:20px;
+}
+.navbar-fixed-top {
+	border-width: 0 0 2px;
+}
+.keAtas {
+	position:fixed;
+	bottom:10px;
+	right:10px;
+	opacity: 0;
 }
