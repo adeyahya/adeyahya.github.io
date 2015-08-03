@@ -1,120 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 	<meta charset="UTF-8">
-	<title>Ade Yahya</title>
+	<title>Document</title>
+	<link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="lib/animate.css/animate.min.css">
+	<script src="lib/jquery/dist/jquery.min.js"></script>
+	<style>
+		.btn-super-lg{
+			padding: 10px 60px;
+			font-size: 25px;
+		}
+		.i-love{
+			position: absolute;
+			margin: 0 auto;
+			width: 100%;
+			z-index: 9;
+			top: 30px;
+		}
+		.i-love img{
+			width: 350px;
+		}
+		.papan-dalam {
+		    height: 300px;
+		    overflow: auto;
+		}
+		.papan-baca {
+		    background: url('bg-white') no-repeat center center;
+		    background-size: cover;
+		    -webkit-background-size: cover;
+		    -moz-background-size: cover;
+		    -o-background-size: cover;
+		    -ms-background-size: cover;
+		    padding: 70px 140px;
+		    width: 630px;
+		    margin: 0 auto;
+		    margin-top: 150px;
+		}
+		body{
+			background: url('landmark.png') fixed;
+			background-repeat: repeat-x;
+			background-size: cover;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			-ms-background-size: cover;
+			-webkit-animation: movebackground 30s linear infinite;
+			-moz-animation: movebackground 30s linear infinite;
+			-o-animation: movebackground 30s linear infinite;
+			-ms-animation: movebackground 30s linear infinite;
+			animation: movebackground 30s linear infinite;
+		}
+		@-webkit-keyframes movebackground{
+			from{background-position:0 0;}
+			to{background-position:100% 0;}
+		}
+		@-moz-keyframes movebackground{
+			from{background-position:0 0;}
+			to{background-position:100% 0;}
+		}
+		@-o-keyframes movebackground{
+			from{background-position:0 0;}
+			to{background-position:100% 0;}
+		}
+		@-ms-keyframes movebackground{
+			from{background-position:0 0;}
+			to{background-position:100% 0;}
+		}
+		@-webkit-keyframes awan1{
+			0%{top:60px;}
+			50%{top:90px;}
+			100%{top:60px;}
+		}
+		@-moz-keyframes awan1{
+			0%{top:60px;}
+			50%{top:90px;}
+			100%{top:60px;}
+		}
+		@-o-keyframes awan1{
+			0%{top:60px;}
+			50%{top:90px;}
+			100%{top:60px;}
+		}
+		@-ms-keyframes awan1{
+			0%{top:60px;}
+			50%{top:90px;}
+			100%{top:60px;}
+		}
+		@-webkit-keyframes awan2{
+			0%{top:80px;}
+			50%{top:100px;}
+			100%{top:80px;}
+		}
+		@-moz-keyframes awan2{
+			0%{top:80px;}
+			50%{top:100px;}
+			100%{top:80px;}
+		}
+		@-o-keyframes awan2{
+			0%{top:80px;}
+			50%{top:100px;}
+			100%{top:80px;}
+		}
+		@-ms-keyframes awan2{
+			0%{top:80px;}
+			50%{top:100px;}
+			100%{top:80px;}
+		}
+		img.awan-kecil {
+		    position: fixed;
+		    width: 90px;
+		}
+		img.awan-1{
+			transition: all 1s;
+			left: 70px;
+		    top: 60px;
+		    -webkit-animation: awan1 4s linear infinite;
+		    -moz-animation: awan1 4s linear infinite;
+		    -o-animation: awan1 4s linear infinite;
+		    -ms-animation: awan1 4s linear infinite;
+			animation: awan1 4s linear infinite;
+		}
+		img.awan-2{
+			transition: all 1s;
+			left: 190px;
+		    top: 80px;
+		    -webkit-animation: awan2 2s linear infinite;
+		    -moz-animation: awan2 2s linear infinite;
+		    -o-animation: awan2 2s linear infinite;
+		    -ms-animation: awan2 2s linear infinite;
+			animation: awan2 2s linear infinite;
+		}
+		.text-nice {
+		    color: #F0AD4E;
+		    text-shadow: 0px 0px 5px black;
+		}
+		::-webkit-scrollbar {
+		    width: 10px;
+		}
+		 
+		::-webkit-scrollbar-track {
+		    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+		    border-radius: 10px;
+		}
+		 
+		::-webkit-scrollbar-thumb {
+		    border-radius: 10px;
+		    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+		}
+	</style>
+	<script>
+		$(window).load(function(){
+			$("#i-love-image").addClass("animated fadeInDown");
+		})
+	</script>
 </head>
 <body>
-<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-	<div class="container">
-	  <!-- Brand and toggle get grouped for better mobile display -->
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-			<a class="navbar-brand" href="#"><i class="fa fa-html5"></i> Adey</a>
-		</div>
+	<img src="awan.png" class="awan-kecil awan-1">
+	<img src="awan.png" class="awan-kecil awan-2">
 
-	  <!-- Collect the nav links, forms, and other content for toggling -->
-		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-			<ul class="nav navbar-nav navbar-right">
-			<li><a href="#">Link</a></li>
-			<li><a href="#">Link</a></li>
-			<li class="dropdown">
-			<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-			<ul class="dropdown-menu">
-			  <li><a href="#">Action</a></li>
-			  <li><a href="#">Another action</a></li>
-			  <li><a href="#">Something else here</a></li>
-			  <li class="divider"></li>
-			  <li><a href="#">Separated link</a></li>
-			  <li class="divider"></li>
-			  <li><a href="#">One more separated link</a></li>
-			</ul>
-			</li>
-			</ul>
-		</div><!-- /.navbar-collapse -->
-	</div>
-</nav>
-
-<header style="margin-top:50px;">
-	<div class="container">
-	<hello-world></hello-world>
-		<div class="row">
-			<div class="col-sm-12 col-md-4 foto-kepala">
-				<img class="img-header" src="resource/images/ade.jpg" alt="ade yahya prasetyo">
-			</div>
-			<div class="col-sm-12 col-md-8">
-				<article>
-					<h1 class="typing">Ade </h1>
-					<p>Teknologi adalah hal yang sangat menakjubkan, saya selalu kagum dan menyukai teknologi dan oleh karena itu saya mengambil studi Computer Science atau Teknik Informatika.</p>
-					<p>Saat ini saya sedang fokus mempelajari Font-End Development seperti HTML5 dan HTML6, CSS 3 & CSS4, Sass, Git, Bower, AngularJs, PolymerJs, EmberJs, Jquery, JavaScript dan beberapa Back-End seperti NodeJs dan MongoDB.</p>
-					<p>Oh iya, saya juga bisa membantu anda membuat website, jika butuh hubungi ya ;)</p>
-				</article>
-				<a href="http://github.com/adeyahya" class="btn btn-default btn-lg"><i class="fa fa-github-alt"></i> Github</a> <a href="http://twitter.com/monyetbegok" class="btn btn-info btn-lg"><i class="fa fa-twitter"></i> Twitter</a>
-			</div>
-		</div>
-	</div>
-</header>
-
-<section class="video">
-	<div class="container">
-		<div class="col-sm-6">
-			<h2>Apa itu Responsive Website ?</h2>
-			<article>
-				<p>Pada tahun - tahun sebelumnya perangat keras untuk mengakses internet tidak begitu beragam, mungkin hanya terdiri dari laptop dan desktop pc. Namun pada tahun belakangan ini mulai trand smartphone, smart-tv, netbook, dan ponsel biasa yang bisa mengakses internet. Karena perangkat - perangkat tersebut memiliki ukuran layar yang berbeda maka diciptakanlah Teknik Responsive Desain untuk website yang memungkinkan website dapat menyesuaikan layout dengan ukuran layar perangkat pengakses. Coba lihat video berikut ini.</p>
-			</article>
-		</div>
-
-		<div class="col-sm-6">
-			<iframe width="100%" height="315" src="//www.youtube.com/embed/S48-8wfFxPY" frameborder="0" allowfullscreen></iframe>
-		</div>
-	</div>
-</section>
-
-<section class="animation">
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-6">
-				<br>
-				<button class="barel-rol btn btn-info btn-lg">Do a Barrel Roll</button>
-				<br>
-				<button class="flip btn btn-warning btn-lg">Do a Flipping Animation</button>
-			</div>
-			<div class="col-sm-6">
-				<article class="flipping">
-					<h2>Butuh Animasi ?</h2>
-					<p>Teknologi HTML5 dan CSS3 bisa membuat website kita menjadi semakin interaktif, salah satunya adalah responsive yang telah dibahas diatas. Kemudian dengan bantuan JavaScript atau Jquery website kita menjadi semakin interaktif lagi dimana kita dapat mengatur animasi pada sebuah event. Contoh klik salah satu tombol berwarna tersebut.</p>
-				</article>
+			<div class="col-xs-8 col-xs-offset-2">
+				<div class="i-love text-center">
+					<a href=""><img src="i-love.png" id="i-love-image" alt=""></a>
+				</div>
+				<div class="papan-baca">
+					<div class="papan-dalam">
+						<header>
+							<h2>Persyaratan</h2>
+						</header>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod praesentium nobis cupiditate, officiis obcaecati aliquid eum reiciendis! Obcaecati vitae soluta dolor, modi, exercitationem incidunt perferendis et voluptates, libero corporis distinctio.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur ex hic tempore eligendi minima quaerat, perspiciatis repellat officiis inventore molestiae magni ea illum est suscipit provident commodi, odio assumenda, sequi.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum similique iure necessitatibus. Sint beatae eum officia necessitatibus expedita aliquam quam, quisquam minima tempore error ipsum ad esse ipsa nemo soluta.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto odio similique reprehenderit sunt, maiores a assumenda quibusdam aliquam saepe mollitia explicabo id fugit unde nisi delectus sed. Obcaecati, nisi assumenda!</p>
+					</div>
+				</div>
+
+				<div class="text-center">
+					<p class="lead text-nice"><input type="checkbox" name="" id=""> Setuju & Mainkan</p>
+					<button class="btn btn-warning btn-super-lg">Mainkan</button>
+				</div>
 			</div>
 		</div>
 	</div>
-</section>
-
-<footer>
-	<div class="container">
-		<p style="color:white;">&copy; adeyahya.github.com 2014</p>
-	</div>
-</footer>
-
-
-<div class="keAtas">
-	<button class="btn btn-default">
-		TOP
-	</button>
-</div>
-
 </body>
 </html>
-
-<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
-<link rel="stylesheet" href="resource/css/custom-core.css">
-<script src="bower_components/jquery/dist/jquery.min.js"></script>
-<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="bower_components/typed.js/js/typed.js"></script>
-<script src="resource/js/core.js"></script>
