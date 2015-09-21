@@ -41,6 +41,10 @@ nav.navbar-primary ul>li>a:hover{
 .site-head{
 	background: url('../img/background.jpg') no-repeat center center fixed;
     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
 }
 
 @media screen and (max-width: 767px)
