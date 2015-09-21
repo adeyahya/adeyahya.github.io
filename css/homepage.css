@@ -2,6 +2,7 @@ body {
 	background: #fff;
 	color: #383a3c;
 	line-height: 1.25;
+	font-weight: 300 !important;
 }
 
 h1{
@@ -28,7 +29,7 @@ nav.navbar-primary ul>li>a {
 }
 
 nav.navbar-primary ul>li>a:hover{
-	color: grey;
+	color: #7FD1D4;
 }
 
 .avatar{
@@ -55,11 +56,9 @@ header.primary h1{
 
 header.primary h1>span{
 	font-weight: 400 !important;
-	color: white;
 }
 
 .large-header {
-	/*position: relative;*/
 	width: 100%;
 	overflow: hidden;
 	z-index: 1;
@@ -88,7 +87,7 @@ a {
 }
 
 a:hover, a:focus {
-	color: #34495e;
+	color: #7FD1D4;
 }
 
 section {
@@ -104,6 +103,8 @@ p.ref {
 .hide,.lead.desc>strong{
 	opacity: 0;
 	transition: all 1s;
+	color: #7FD1D4;
+	text-shadow: 0px 0px 6px black;
 }
 
 .animated{
