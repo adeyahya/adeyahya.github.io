@@ -100,3 +100,12 @@ p.ref {
 	text-align: center;
 	padding: 2em 1em;
 }
+
+.hide,.lead.desc>strong{
+	opacity: 0;
+	transition: all 1s;
+}
+
+.animated{
+	display: inline !important;
+}

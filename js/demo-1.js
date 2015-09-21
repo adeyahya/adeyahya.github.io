@@ -181,5 +181,29 @@
     function getDistance(p1, p2) {
         return Math.pow(p1.x - p2.x, 2) + Math.pow(p1.y - p2.y, 2);
     }
+
+    $(window).load(function(){
+        
+        $("#head1").css("opacity",1).addClass("animated bounceInDown");
+        
+        var $strong = $(".lead.desc>strong");
+        var i = 1;
+
+        function myLoop () {
+            setTimeout(function () {
+              $(".lead.desc strong:nth-child(" + i + ")").css("opacity",1);
+              if (i <= $strong.length + 4) {   
+                i++;
+                 myLoop();
+              }           
+            }, 300)
+        }
+
+        myLoop();
+
+        // $(".lead.desc>strong").each(function(){
+        //     setTimeout()
+        // });
+    })
     
 })();
