@@ -1,8 +1,9 @@
 body {
-	background: #fff;
-	color: #383a3c;
+	background: #f6f7f8;
+	color: #727272;
 	line-height: 1.25;
-	font-weight: 300 !important;
+	font-size: 14pt;
+    font-weight: 200;
 }
 
 h1{
@@ -52,6 +53,12 @@ nav.navbar-primary ul>li>a:hover{
 	.site-head{
 		width: 100%;
 		padding-bottom: 150px;
+	}
+	h1{
+		font-size: 30px;
+	}
+	h2{
+		font-size: 25px;
 	}
 }
 
@@ -106,7 +113,6 @@ a:hover, a:focus {
 
 section {
 	padding: 1em;
-	text-align: center;
 }
 
 p.ref {
@@ -123,4 +129,101 @@ p.ref {
 
 .animated{
 	display: inline !important;
+}
+
+.featured {
+    background-color: #FFFFFF;
+    color: #727272;
+}
+
+.reading{
+	padding: 50px 10px;
+}
+article header h1 {
+    font-weight: 600 !important;
+    color: #46A5A9;
+    text-shadow: 0px 0px 1px #727272;
+}
+
+article header.big{
+	margin-bottom:25px;
+}
+
+article header.big p{
+	font-style: italic;
+    color: #BFBFBF;
+}
+
+.coding {
+    background-position: 0 0,0 0,0 0;
+    background-color: #46A5A9;;
+    background-image: url(https://developer.cdn.mozilla.net/static/img/header-background.png),url(https://developer.cdn.mozilla.net/static/img/blueprint.png),url(https://developer.cdn.mozilla.net/static/img/mdn-header-gradient.png);
+    background-repeat: repeat,repeat,repeat-x;
+    color:white;
+}
+img.pull-right{
+	margin-left: 20px;
+	margin-bottom: 10px;
+}
+
+img.pull-left{
+	margin-right: 20px;
+	margin-bottom: 10px;
+}
+.team{
+	background-color: white;
+}
+nav.fixed-nav {
+    position: fixed;
+    color: white !important;
+    top: 10px;
+    left: 10px;
+    z-index: 10;
+    font-size: 20px;
+    ul{
+    	list-style:none;
+    	padding: 0px;
+    	li{
+			background-color: white;
+			padding: 5px 10px;
+			opacity: 0.8;
+			transition: all 0.5s;
+			border-radius: 10px;
+    		a{
+    			color:#46A5A9;
+    		}
+    		a:hover,a:focus,a:active,a:visited{
+    			text-decoration: none;
+    		}
+    	}
+    	li.current{
+    		border: solid #69B6B9 2px;
+    	}
+    	li:hover{
+			opacity: 1;
+    	}
+    	li>a>span{
+    		display:none;
+    		transition: all 1s;
+    	}
+    	li:hover>a>span{
+    		display:inline;
+    	}
+    }
+}
+
+.btn{
+	border: 1px solid transparent;
+	border-radius: 0px !important;
+}
+
+.btn-primary {
+    color: #46A5A9;
+    background-color: transparent;
+    border: solid #46A5A9 3px !important;
+    transition: all 0.5s;
+}
+.btn-primary:hover,.btn-primary:active,.btn-primary:focus{
+	background-color: #46A5A9 !important;
+	color: white !important;
 }
