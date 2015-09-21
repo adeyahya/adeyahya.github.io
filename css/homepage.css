@@ -14,6 +14,8 @@ nav.navbar-primary ul{
 	list-style: none;
 	display: inline-flex;
 	font-size: 25px;
+	margin: 0px;
+	padding: 0px;
 }
 
 nav.navbar-primary ul>li>a {
