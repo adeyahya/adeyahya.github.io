@@ -89,19 +89,6 @@ header.primary h1>span{
 	z-index: 1;
 }
 
-.main-title {
-	position: absolute;
-	margin: 0;
-	padding: 0;
-	color: #f9f1e9;
-	text-align: center;
-	top: 30%;
-	left: 50%;
-	-webkit-transform: translate3d(-50%,-50%,0);
-	transform: translate3d(-50%,-50%,0);
-}
-
-
 a, button {
 	outline: none;
 }
@@ -155,7 +142,9 @@ article header.big{
 
 article header.big p{
 	font-style: italic;
-    color: #BFBFBF;
+    color: #9A9A9A;
+    text-shadow: 0px 0px 1px #FFFFFF;
+    font-size: 20px;
 }
 
 .coding {
